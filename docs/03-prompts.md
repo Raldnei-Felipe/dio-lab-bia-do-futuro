@@ -456,9 +456,4 @@ Você deseja manter uma nova movimentação ou está tentando corrigir a existen
 
 ---
 
-## Observações e Aprendizados
 
-> Registre aqui ajustes que você fez nos prompts e por quê.
-
-- [Observação 1]
-- [Observação 2]
