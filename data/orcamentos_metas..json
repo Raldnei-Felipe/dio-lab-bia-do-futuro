@@ -1,0 +1,382 @@
+{
+  "usuario_id": "USR-0001",
+  "periodo": {
+    "inicio": "2026-01-01",
+    "fim": "2026-06-30",
+    "meses": 6
+  },
+  "orcamentos": [
+    {
+      "id": "ORC-0001",
+      "mes": "2026-01",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 800.00,
+      "valor_realizado": 650.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 81.25,
+      "status": "dentro_do_orcamento",
+      "observacao": "Gasto dentro do limite planejado."
+    },
+    {
+      "id": "ORC-0002",
+      "mes": "2026-01",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 450.00,
+      "valor_realizado": 420.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 93.33,
+      "status": "proximo_do_limite",
+      "observacao": "O valor ultrapassou o limite de alerta."
+    },
+    {
+      "id": "ORC-0003",
+      "mes": "2026-01",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software",
+      "valor_planejado": 350.00,
+      "valor_realizado": 289.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 82.83,
+      "status": "dentro_do_orcamento",
+      "observacao": "Despesa recorrente controlada."
+    },
+    {
+      "id": "ORC-0004",
+      "mes": "2026-02",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 900.00,
+      "valor_realizado": 980.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 108.89,
+      "status": "acima_do_orcamento",
+      "observacao": "O orçamento foi ultrapassado."
+    },
+    {
+      "id": "ORC-0005",
+      "mes": "2026-02",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 500.00,
+      "valor_realizado": 510.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 102.00,
+      "status": "acima_do_orcamento",
+      "observacao": "Aumento causado por mais visitas a clientes."
+    },
+    {
+      "id": "ORC-0006",
+      "mes": "2026-02",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software",
+      "valor_planejado": 350.00,
+      "valor_realizado": 289.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 82.83,
+      "status": "dentro_do_orcamento",
+      "observacao": "Despesa mensal recorrente."
+    },
+    {
+      "id": "ORC-0007",
+      "mes": "2026-03",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 1100.00,
+      "valor_realizado": 1250.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 113.64,
+      "status": "acima_do_orcamento",
+      "observacao": "Aumento relacionado à campanha de lançamento."
+    },
+    {
+      "id": "ORC-0008",
+      "mes": "2026-03",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 500.00,
+      "valor_realizado": 475.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 95.00,
+      "status": "proximo_do_limite",
+      "observacao": "Gasto próximo do limite mensal."
+    },
+    {
+      "id": "ORC-0009",
+      "mes": "2026-03",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software e licenças",
+      "valor_planejado": 400.00,
+      "valor_realizado": 629.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 157.48,
+      "status": "acima_do_orcamento",
+      "observacao": "Foram adquiridas licenças adicionais."
+    },
+    {
+      "id": "ORC-0010",
+      "mes": "2026-04",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 1300.00,
+      "valor_realizado": 1480.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 113.85,
+      "status": "acima_do_orcamento",
+      "observacao": "Investimento elevado em campanha institucional."
+    },
+    {
+      "id": "ORC-0011",
+      "mes": "2026-04",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 550.00,
+      "valor_realizado": 620.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 112.73,
+      "status": "acima_do_orcamento",
+      "observacao": "Aumento de visitas a clientes."
+    },
+    {
+      "id": "ORC-0012",
+      "mes": "2026-04",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software",
+      "valor_planejado": 400.00,
+      "valor_realizado": 289.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 72.48,
+      "status": "dentro_do_orcamento",
+      "observacao": "Despesa recorrente sob controle."
+    },
+    {
+      "id": "ORC-0013",
+      "mes": "2026-05",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 1200.00,
+      "valor_realizado": 1120.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 93.33,
+      "status": "proximo_do_limite",
+      "observacao": "O orçamento foi quase totalmente utilizado."
+    },
+    {
+      "id": "ORC-0014",
+      "mes": "2026-05",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 600.00,
+      "valor_realizado": 580.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 96.67,
+      "status": "proximo_do_limite",
+      "observacao": "Gasto dentro do orçamento, mas acima do alerta."
+    },
+    {
+      "id": "ORC-0015",
+      "mes": "2026-05",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software",
+      "valor_planejado": 400.00,
+      "valor_realizado": 289.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 72.48,
+      "status": "dentro_do_orcamento",
+      "observacao": "Despesa recorrente sob controle."
+    },
+    {
+      "id": "ORC-0016",
+      "mes": "2026-06",
+      "categoria": "Marketing",
+      "subcategoria": "Mídia paga",
+      "valor_planejado": 1500.00,
+      "valor_realizado": 1650.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 110.00,
+      "status": "acima_do_orcamento",
+      "observacao": "Aumento justificado por campanha de lançamento."
+    },
+    {
+      "id": "ORC-0017",
+      "mes": "2026-06",
+      "categoria": "Transporte",
+      "subcategoria": "Combustível",
+      "valor_planejado": 700.00,
+      "valor_realizado": 690.00,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 98.57,
+      "status": "proximo_do_limite",
+      "observacao": "Gasto próximo do limite mensal."
+    },
+    {
+      "id": "ORC-0018",
+      "mes": "2026-06",
+      "categoria": "Ferramentas e softwares",
+      "subcategoria": "Software",
+      "valor_planejado": 400.00,
+      "valor_realizado": 289.90,
+      "limite_alerta_percentual": 85,
+      "percentual_utilizado": 72.48,
+      "status": "dentro_do_orcamento",
+      "observacao": "Despesa recorrente sob controle."
+    }
+  ],
+  "metas": [
+    {
+      "id": "META-0001",
+      "mes": "2026-01",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1000.00,
+      "valor_realizado": 0.00,
+      "percentual_concluido": 0.00,
+      "status": "nao_iniciada",
+      "observacao": "Nenhum aporte realizado no mês."
+    },
+    {
+      "id": "META-0002",
+      "mes": "2026-02",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1000.00,
+      "valor_realizado": 500.00,
+      "percentual_concluido": 50.00,
+      "status": "em_andamento",
+      "observacao": "Aporte parcial realizado."
+    },
+    {
+      "id": "META-0003",
+      "mes": "2026-03",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1000.00,
+      "valor_realizado": 750.00,
+      "percentual_concluido": 75.00,
+      "status": "em_andamento",
+      "observacao": "Aporte abaixo da meta, mas em evolução."
+    },
+    {
+      "id": "META-0004",
+      "mes": "2026-04",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1000.00,
+      "valor_realizado": 1000.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Meta mensal atingida."
+    },
+    {
+      "id": "META-0005",
+      "mes": "2026-05",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1000.00,
+      "valor_realizado": 1000.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Meta mensal atingida."
+    },
+    {
+      "id": "META-0006",
+      "mes": "2026-06",
+      "nome": "Reserva de emergência",
+      "categoria": "Reserva financeira",
+      "valor_meta": 1200.00,
+      "valor_realizado": 1200.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Meta aumentada e atingida."
+    },
+    {
+      "id": "META-0007",
+      "mes": "2026-01",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    },
+    {
+      "id": "META-0008",
+      "mes": "2026-02",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    },
+    {
+      "id": "META-0009",
+      "mes": "2026-03",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    },
+    {
+      "id": "META-0010",
+      "mes": "2026-04",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    },
+    {
+      "id": "META-0011",
+      "mes": "2026-05",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    },
+    {
+      "id": "META-0012",
+      "mes": "2026-06",
+      "nome": "Controlar retirada do proprietário",
+      "categoria": "Retirada pessoal",
+      "valor_meta": 900.00,
+      "valor_realizado": 900.00,
+      "percentual_concluido": 100.00,
+      "status": "concluida",
+      "observacao": "Retirada mantida dentro do limite."
+    }
+  ],
+  "regras_de_alerta": [
+    {
+      "codigo": "ORCAMENTO_85",
+      "condicao": "percentual_utilizado >= 85",
+      "mensagem": "A categoria está próxima do limite planejado."
+    },
+    {
+      "codigo": "ORCAMENTO_EXCEDIDO",
+      "condicao": "valor_realizado > valor_planejado",
+      "mensagem": "O orçamento da categoria foi ultrapassado."
+    },
+    {
+      "codigo": "META_NAO_ATINGIDA",
+      "condicao": "percentual_concluido < 100",
+      "mensagem": "A meta do período ainda não foi concluída."
+    },
+    {
+      "codigo": "META_CONCLUIDA",
+      "condicao": "percentual_concluido >= 100",
+      "mensagem": "A meta do período foi atingida."
+    }
+  ]
+}

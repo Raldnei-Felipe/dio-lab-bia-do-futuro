@@ -1,0 +1,217 @@
+{
+  "id_usuario": "USR-0001",
+  "nome": "Rafael Martins",
+  "tipo_perfil": "profissional_autonomo",
+  "atividade": "Publicidade e tecnologia",
+  "descricao_atividade": "Profissional autônomo que presta serviços de publicidade, marketing digital, tecnologia e automação para pequenos negócios.",
+  "moeda_principal": "BRL",
+  "data_inicio_controle": "2026-01-01",
+  "periodo_historico": {
+    "inicio": "2026-01-01",
+    "fim": "2026-06-30",
+    "meses_com_dados": 6
+  },
+  "objetivos_financeiros": [
+    "Organizar as entradas e saídas do negócio",
+    "Acompanhar o saldo mensal",
+    "Controlar gastos operacionais",
+    "Separar despesas profissionais de retiradas pessoais",
+    "Criar uma reserva financeira",
+    "Identificar padrões de consumo"
+  ],
+  "preferencias": {
+    "idioma": "pt-BR",
+    "formato_data": "DD/MM/YYYY",
+    "formato_moeda": "R$",
+    "casas_decimais": 2,
+    "tom_do_agente": "informal, próximo, educativo e proativo",
+    "frequencia_de_resumo": "mensal",
+    "confirmar_antes_de_registrar_ambiguidade": true,
+    "separar_financas_pessoais_e_profissionais": true,
+    "receber_alertas_importantes": true
+  },
+  "categorias_principais": [
+    {
+      "nome": "Prestação de serviços",
+      "tipo": "entrada",
+      "descricao": "Valores recebidos por serviços prestados a clientes."
+    },
+    {
+      "nome": "Custos fixos",
+      "tipo": "saida",
+      "descricao": "Despesas recorrentes necessárias para manter a operação."
+    },
+    {
+      "nome": "Ferramentas e softwares",
+      "tipo": "saida",
+      "descricao": "Assinaturas, licenças e ferramentas usadas no trabalho."
+    },
+    {
+      "nome": "Marketing",
+      "tipo": "saida",
+      "descricao": "Anúncios, campanhas e ações de divulgação."
+    },
+    {
+      "nome": "Transporte",
+      "tipo": "saida",
+      "descricao": "Combustível, deslocamentos e visitas a clientes."
+    },
+    {
+      "nome": "Operação",
+      "tipo": "saida",
+      "descricao": "Materiais e despesas diretamente relacionadas à execução dos projetos."
+    },
+    {
+      "nome": "Equipe e colaboradores",
+      "tipo": "saida",
+      "descricao": "Pagamentos a freelancers, prestadores e colaboradores."
+    },
+    {
+      "nome": "Retirada pessoal",
+      "tipo": "saida",
+      "descricao": "Valores retirados pelo proprietário para uso pessoal."
+    }
+  ],
+  "regras_de_classificacao": [
+    "Pagamentos recebidos de clientes devem ser registrados como entradas.",
+    "Aluguel, internet e telefonia devem ser classificados como custos fixos.",
+    "Anúncios patrocinados devem ser classificados como Marketing.",
+    "Combustível e deslocamentos devem ser classificados como Transporte.",
+    "Assinaturas de sistemas e ferramentas devem ser classificadas como Ferramentas e softwares.",
+    "Pagamentos a freelancers devem ser classificados como Equipe e colaboradores.",
+    "Retiradas do proprietário devem permanecer separadas das despesas operacionais.",
+    "Quando a descrição for insuficiente, o agente deve perguntar antes de classificar.",
+    "Quando houver dúvida entre gasto pessoal e profissional, o agente deve pedir confirmação."
+  ],
+  "limites_de_alerta": {
+    "percentual_orcamento": 85,
+    "aumento_categoria_mes_a_mes_percentual": 20,
+    "queda_entradas_mes_a_mes_percentual": 20,
+    "saldo_minimo_recomendado": 2500.0,
+    "valor_maximo_retirada_mensal": 900.0,
+    "alertar_movimentacao_duplicada": true,
+    "alertar_despesa_recorrente_nao_registrada": true
+  },
+  "metas": [
+    {
+      "id": "META-0001",
+      "nome": "Reserva de emergência",
+      "tipo": "financeira",
+      "valor_alvo_mensal": 1000.0,
+      "prioridade": "alta",
+      "status": "em_andamento",
+      "regra": "Alertar quando o aporte mensal ficar abaixo do valor planejado."
+    },
+    {
+      "id": "META-0002",
+      "nome": "Controlar retirada do proprietário",
+      "tipo": "controle_de_gastos",
+      "valor_limite_mensal": 900.0,
+      "prioridade": "alta",
+      "status": "ativa",
+      "regra": "Alertar quando a retirada pessoal ultrapassar o limite mensal."
+    },
+    {
+      "id": "META-0003",
+      "nome": "Manter os custos fixos sob controle",
+      "tipo": "controle_de_gastos",
+      "valor_limite_mensal": 2000.0,
+      "prioridade": "media",
+      "status": "ativa",
+      "regra": "Alertar quando os custos fixos ultrapassarem o limite mensal."
+    }
+  ],
+  "historico_mensal": [
+    {
+      "mes": "2026-01",
+      "total_entradas": 8900.0,
+      "total_saidas": 4254.9,
+      "saldo": 4645.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "O mês terminou com saldo positivo."
+    },
+    {
+      "mes": "2026-02",
+      "total_entradas": 10200.0,
+      "total_saidas": 4449.9,
+      "saldo": 5750.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "Os gastos com Marketing ultrapassaram o orçamento."
+    },
+    {
+      "mes": "2026-03",
+      "total_entradas": 9550.0,
+      "total_saidas": 5104.9,
+      "saldo": 4445.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "Houve aumento nos gastos com Marketing e softwares."
+    },
+    {
+      "mes": "2026-04",
+      "total_entradas": 11900.0,
+      "total_saidas": 5349.9,
+      "saldo": 6550.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "O aumento das entradas compensou o crescimento das despesas."
+    },
+    {
+      "mes": "2026-05",
+      "total_entradas": 10400.0,
+      "total_saidas": 4819.9,
+      "saldo": 5580.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "Os gastos com Marketing ficaram próximos do orçamento."
+    },
+    {
+      "mes": "2026-06",
+      "total_entradas": 13000.0,
+      "total_saidas": 5819.9,
+      "saldo": 7180.1,
+      "maior_categoria_de_saida": "Custos fixos",
+      "observacao": "Foi o mês com maior entrada e maior saldo do período."
+    }
+  ],
+  "padroes_identificados": [
+    "As entradas cresceram ao longo do primeiro semestre.",
+    "Os gastos com Marketing aumentaram entre março e junho.",
+    "Os gastos com Transporte cresceram conforme aumentaram as visitas a clientes.",
+    "As despesas fixas recorrentes permaneceram relativamente estáveis.",
+    "A retirada pessoal foi mantida em aproximadamente R$ 900,00 por mês.",
+    "Junho apresentou o maior volume de entradas e o maior saldo do período.",
+    "O usuário apresenta fluxo de caixa positivo nos seis meses analisados."
+  ],
+  "comportamento_esperado_do_agente": {
+    "ao_registrar_movimentacao": [
+      "Identificar se a movimentação é uma entrada ou saída.",
+      "Confirmar o valor, a data e a descrição.",
+      "Sugerir uma categoria adequada.",
+      "Pedir confirmação quando houver ambiguidade.",
+      "Informar o registro concluído ao usuário."
+    ],
+    "ao_analisar_gastos": [
+      "Considerar somente os dados registrados.",
+      "Comparar o período solicitado com períodos anteriores quando houver dados.",
+      "Destacar as categorias com maior crescimento.",
+      "Informar quando a quantidade de dados for insuficiente.",
+      "Separar fatos, cálculos e sugestões."
+    ],
+    "ao_identificar_um_alerta": [
+      "Explicar o motivo do alerta de forma simples.",
+      "Informar o valor ou percentual envolvido.",
+      "Evitar julgamentos sobre as decisões do usuário.",
+      "Sugerir uma ação prática.",
+      "Permitir que o usuário peça mais detalhes."
+    ]
+  },
+  "limitacoes": [
+    "Não substitui um contador ou consultor financeiro.",
+    "Não faz recomendações personalizadas de investimento.",
+    "Não declara impostos.",
+    "Não confirma saldo bancário real sem uma integração autorizada.",
+    "Não realiza pagamentos ou transferências.",
+    "Não deve inventar movimentações, valores ou datas.",
+    "Não deve apresentar estimativas como valores confirmados.",
+    "Não deve misturar despesas pessoais e profissionais sem autorização.",
+    "Não deve julgar os hábitos financeiros do usuário."
+  ]
+}
