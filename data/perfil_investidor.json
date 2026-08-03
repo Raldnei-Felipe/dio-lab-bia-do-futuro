@@ -1,21 +1,20 @@
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
+  "nome": "Raldnei Felipe",
+  "idade": 37,
+  "profissao": "Musico/tecnico em TI",
   "renda_mensal": 5000.00,
   "perfil_investidor": "moderado",
   "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
+  "patrimonio_total": 25000.00,
+  "reserva_emergencia_atual": 0,
   "aceita_risco": false,
   "metas": [
     {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
+      "meta": "Administrar bem o dinheiro",
+        "prazo": "2026-09"
     },
     {
-      "meta": "Entrada do apartamento",
+      "meta": "Ter reservas",
       "valor_necessario": 50000.00,
       "prazo": "2027-12"
     }
