@@ -1,9 +1,9 @@
 {
   "id_usuario": "USR-0001",
-  "nome": "Rafael Martins",
+  "nome": "Raldnei Felipe",
   "tipo_perfil": "profissional_autonomo",
-  "atividade": "Publicidade e tecnologia",
-  "descricao_atividade": "Profissional autônomo que presta serviços de publicidade, marketing digital, tecnologia e automação para pequenos negócios.",
+  "atividade": "Musico e tecnologia",
+  "descricao_atividade": "Profissional autônomo profissional que presta serviços de apresentaçoes musicais, marketing digital, tecnologia e automação para pequenos negócios.",
   "moeda_principal": "BRL",
   "data_inicio_controle": "2026-01-01",
   "periodo_historico": {
