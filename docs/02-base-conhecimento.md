@@ -36,22 +36,18 @@ import json
 
 # CSV com as entradas e saídas financeiras
 transacoes = pd.read_csv(
-    "data/transacoes_financeiras.csv",
+    "data/transacoes_historico.csv",
     sep=";",
     encoding="utf-8"
 )
 
-# JSON com os orçamentos e metas
-with open("data/orcamentos_metas.json", "r", encoding="utf-8") as arquivo:
-    orcamentos_metas = json.load(arquivo)
+
 
 # JSON com o perfil e as preferências do usuário
 with open("data/perfil_usuario.json", "r", encoding="utf-8") as arquivo:
     perfil_usuario = json.load(arquivo)
 
-# JSON com as regras de funcionamento do agente
-with open("data/regras_agente_financeiro.json", "r", encoding="utf-8") as arquivo:
-    regras_agente = json.load(arquivo)
+
 
 ````
 
