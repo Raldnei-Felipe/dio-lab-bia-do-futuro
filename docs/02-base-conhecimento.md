@@ -6,10 +6,9 @@
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `transacoes_financeiras.csv` | CSV | Contextualizar interações anteriores |
-| `orcamentos_metas.json` | JSON | Obter controle de valores, porjetar x e gastou y |
+| `transacoes_historico.csv` | CSV | Contextualizar interações anteriores |
 | `perfil_usuario` | JSON | todos os dados nescessario do usuario para sincronizar com os dados obtidos |
-| ` regras_agente_financeiro` | JSON | Define como o agente registra, categoriza e analisa finanças, gera alertas, comunica-se e respeita limitações de segurança. |
+
 
 
 
@@ -17,7 +16,7 @@
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+
 
  Meus dados de aquecimento para meu Agente "Primo pobre" foram criados com Chats para melhor aproveito mediante as nescessidades do Agente Primo Probre.
 
@@ -110,7 +109,7 @@ CONTEXTO DO AGENTE FINANCEIRO
 
 Perfil do usuário:
 - ID: USR-0001
-- Nome: Rafael Martins
+- Nome: Raldnei Felipe
 - Perfil: Profissional autônomo
 - Área de atuação: Publicidade e tecnologia
 - Moeda principal: BRL
