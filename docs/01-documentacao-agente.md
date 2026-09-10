@@ -7,30 +7,18 @@ Pequenos negocios e profissionais autonomos costumam registrar entradas e saidas
 com isso, torna-se dificil saner:
 * quanto entrou e quanto saiu em determinado periodo
 * Quais categorias estao consumindo mais dinheiro
-* Se o negocio está dentro do orçamento planejado
-* quais gastos sao recorrentes ou desnecessarios
-* se existe dinehiro suficiente para cumprir as proximas obrigaçoes
-* como habitos de consumo estao afetando o resultado financeiro
+
 
 O agente resolve esse problema ajudando o usuario a manter o controle fiinanceiro no dia dia,sem exigir conhecimento avançado de contabilidade ou finanças.
 
 ### Solução
 
-o Agente funcionará como um assistente financeiro simples, proximo e organizado. Ele registra as movimentaçoes informadas pelo usuaruii, identifica se  sao entradas ou saidas,categoriza os gastos e compnaha a evoluçao do orçamento.
+o Agente funcionará como um assistente financeiro simples, proximo e organizado. Ele registra as movimentaçoes informadas pelo usuaruii, identifica se  sao entradas ou saidas, categoriza os gastos e compnaha a evoluçao do orçamento.
 
-> Além de apenas guardar os dados, o agente analisa as informaçoes e chama a anteção do usuario quando percebe algo importante, como:
-
-*Aumento incomum de determinada categoria
-* gatos acima do orçamento definido
-* redução do saldo disponivel
-* contas recorrentes proximas do vencimento
-* concentração excessiva de despesas em uma area
-* diferença entre o valor previsto e o valor realmente gastos
-* Possibilidade de economizar com base no historico registrado
 
 O agente tambem pode fazer perguntas para entender melhor uma movimentação.Por exemplo, se o usuarui informar apenas "gastei RS250", o agente poderá perguntar do que se trata antes de classificar o gasto.
 
-A proposta nao é julgar as escolhas do usuario, mas ajuda-lo a encergar melhor a propria situação financeira e tomar decisoes mais consciente.
+
 
 
 ### Público-Alvo
@@ -69,9 +57,7 @@ Primo pobre é um assistente:
   Primo pobre nao deve agir como um contador formal, consultor de investimentos ou fiscal dos gastos. Seu papel é ajudar o usuario a entender melhor o proprio dinheiro e manter a rotina financeira organizada!
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
-
-o tom deve ser:
+> o tom deve ser:
 
 * Informal
 * Humano
@@ -161,9 +147,9 @@ flowchart TD
 | LLM | Ollama (local) |
 | Base de Conhecimento | JSON/CSV - Armazena as informações registradas pelo usuário, como: Tipo da movimentação: entrada ou saída, Valor, Data, Descrição, Categoria, Forma de pagamento, Cliente ou fornecedor, quando aplicável, Projeto ou atividade relacionada, Status da movimentação, Observações, Orçamento definido, Metas financeiras. |
 | Validação | Verifica se a movimentação possui informações suficientes e coerentes antes de ser registrada.Deve conferir: Se o valor foi informado, Se o valor é válido, Se a movimentação é uma entrada ou saída, Se a data foi informada ou pode ser assumida como a data atual, Se a categoria faz sentido, Se não existe risco de duplicidade, Se o usuário confirmou uma informação ambígua.|
-| Categorização |Vendas e recebimentos, Prestação de serviços, Alimentação, Transporte, Moradia, Materiais, Ferramentas e softwares, Marketing e divulgação, Impostos e taxas, Equipe e colaboradores, Educação e cursos, Retiradas pessoais, Outros.  |
-| Analise | Total de entradas e saídas, Saldo do período, Gastos por categoria, Comparação entre meses, Evolução do orçamento, Gastos recorrentes, Maiores despesas, Categorias que cresceram acima do normal, Diferença entre o planejado e o realizado. |
-| Alertas | Orçamento próximo do limite, Orçamento ultrapassado, Queda relevante nas entradas, Aumento expressivo em uma categoria, Conta recorrente não registrada, Saldo abaixo de uma meta definida, Movimentação possivelmente duplicada, Falta de informações importantes.|
+| Categorização |Data, Tipo, Valor e descrição da categoria  |
+| Analise | Total de entradas e saídas, Saldo do período, Gastos por categoria, Comparação entre meses, Evolução do orçamento, Gastos recorrentes, Maiores despesas, Categorias que cresceram acima do normal. |
+
 ---
 
 ## Segurança e Anti-Alucinação
