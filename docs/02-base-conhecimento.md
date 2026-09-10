@@ -2,7 +2,7 @@
 
 ## Dados Utilizados
 
-> Meus dados de aquecimento para meu Agente "Primo pobre" foram criados com Chats para melhor aproveito mediante as nescessidades do Agente Primo Probre.
+> Meus dados de aquecimento para meu Agente "Primo pobre" foram criados conforme a nescessidade de testes!
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
@@ -29,27 +29,64 @@
 ### Como os dados são carregados?
 
 Os dados do agente são armazenados na pasta `data/` e carregados quando a aplicação é iniciada. Os arquivos CSV são utilizados para armazenar as transações financeiras, enquanto os arquivos JSON guardam informações sobre o usuário, os orçamentos, as metas e as regras de funcionamento do agente.
-
-```python
-import pandas as pd
+``` Python
 import json
+from pathlib import Path
+import pandas as pd
 
-# CSV com as entradas e saídas financeiras
-transacoes = pd.read_csv(
-    "data/transacoes_historico.csv",
-    sep=";",
-    encoding="utf-8"
-)
+# Caminhos dos arquivos
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+TRANSACOES_PATH = DATA_DIR / "transacoes_historico.csv"
+PERFIL_PATH = DATA_DIR / "perfil_usuario.json"
 
+# ------------------------------------------------------------
+# 1. CSV com as entradas e saídas financeiras
+# ------------------------------------------------------------
+def detectar_configuracao_csv():
+    """Detecta a codificação e o separador do CSV."""
+    for codificacao in ["utf-8-sig", "utf-8", "cp1252", "latin1"]:
+        try:
+            conteudo = TRANSACOES_PATH.read_text(encoding=codificacao)
+            primeira_linha = conteudo.splitlines()[0]
+            separador = (
+                ";" if primeira_linha.count(";") > primeira_linha.count(",")
+                else ","
+            )
+            return codificacao, separador
+        except (UnicodeDecodeError, FileNotFoundError):
+            continue
+    return "utf-8-sig", ","
 
+def carregar_transacoes():
+    if not TRANSACOES_PATH.exists():
+        return pd.DataFrame()  
+    codificacao, separador = detectar_configuracao_csv()
+    return pd.read_csv(
+        TRANSACOES_PATH,
+        sep=separador,
+        encoding=codificacao,
+        on_bad_lines="skip",  
+        engine="python"
+    )
 
-# JSON com o perfil e as preferências do usuário
-with open("data/perfil_usuario.json", "r", encoding="utf-8") as arquivo:
-    perfil_usuario = json.load(arquivo)
+transacoes = carregar_transacoes()
 
+# ------------------------------------------------------------
+# 2. JSON com o perfil e as preferências do usuário
+# ------------------------------------------------------------
 
+def carregar_perfil():
+    try:
+        with open(PERFIL_PATH, "r", encoding="utf-8") as arquivo:
+            return json.load(arquivo)
+    except UnicodeDecodeError:
+        with open(PERFIL_PATH, "r", encoding="cp1252") as arquivo:
+            return json.load(arquivo)
+    except FileNotFoundError:
+        return {"nome": "Usuário"}
 
-````
+perfil_usuario = carregar_perfil()
 
 ## Como os dados são usados no prompt?
 
@@ -104,8 +141,7 @@ O agente deve seguir estas instruções ao utilizar os dados:
 CONTEXTO DO AGENTE FINANCEIRO
 
 Perfil do usuário:
-- ID: USR-0001
-- Nome: Raldnei Felipe
+- Nome:  Felipe
 - Perfil: Profissional autônomo
 - Área de atuação: Publicidade e tecnologia
 - Moeda principal: BRL
@@ -117,9 +153,6 @@ Perfil do usuário:
 Objetivos financeiros:
 - Organizar as entradas e saídas do negócio.
 - Acompanhar o saldo mensal.
-- Controlar os gastos operacionais.
-- Separar retiradas pessoais das despesas profissionais.
-- Criar uma reserva de emergência.
 - Identificar padrões de consumo.
 
 Regras importantes:
@@ -196,50 +229,7 @@ Resumo financeiro do período:
   - Descrição: Retirada do proprietário
   - Categoria: Retirada pessoal
 
-Orçamentos do mês atual:
-- Marketing:
-  - Planejado: R$ 1.500,00
-  - Realizado: R$ 1.650,00
-  - Situação: Acima do orçamento
 
-- Transporte:
-  - Planejado: R$ 700,00
-  - Realizado: R$ 690,00
-  - Situação: Próximo do limite
 
-- Ferramentas e softwares:
-  - Planejado: R$ 400,00
-  - Realizado: R$ 289,90
-  - Situação: Dentro do orçamento
 
-Metas:
-- Reserva de emergência:
-  - Meta mensal: R$ 1.200,00
-  - Valor realizado: R$ 1.200,00
-  - Situação: Concluída
 
-- Controle da retirada do proprietário:
-  - Limite mensal: R$ 900,00
-  - Valor realizado: R$ 900,00
-  - Situação: Dentro do limite
-
-Limites de alerta:
-- Alertar quando uma categoria atingir 85% do orçamento.
-- Alertar quando os gastos de uma categoria aumentarem 20% ou mais.
-- Alertar quando as entradas caírem 20% ou mais.
-- Considerar saldo mínimo recomendado de R$ 2.500,00.
-- Considerar limite de retirada pessoal de R$ 900,00.
-- Verificar possíveis movimentações duplicadas.
-
-Solicitação atual do usuário:
-"Estou dentro do orçamento neste mês?"
-
-Instruções para responder:
-- Comparar os valores planejados com os valores realizados.
-- Informar quais categorias estão dentro do orçamento.
-- Informar quais categorias ultrapassaram o limite.
-- Destacar que Marketing está acima do orçamento.
-- Destacar que Transporte está próximo do limite.
-- Informar que Ferramentas e softwares estão dentro do orçamento.
-- Não fazer julgamentos.
-- Sugerir o acompanhamento dos próximos gastos.
